@@ -14,7 +14,7 @@ library(stats)
 ###############################
 #B) Define & import BED # 
 
-single_array_BED <- file.path("D:", "R publication", "single_copy_locus_54Bongartz_best.bed")
+single_array_BED <- file.path("DIRECTORY", "FOLDER", "BED FILE.bed")
 peaks <- import.bed(single_array_BED)
 
 ###############################
@@ -30,25 +30,25 @@ options(ucscChromosomeNames=FALSE)
 #5  Non-OE MSL2 from salivary glands (Figueiredo 2014) 
 
 #1
-dmel_msl2_to_dmelHL_rep1_bw <- import.bw("D:/R publication/Dmel-MSL2 to Dmel HL rep1.bigwig", as = "GRanges")
-dmel_msl2_to_dmelHL_rep2_bw <- import.bw("D:/R publication/Dmel-MSL2 to Dmel HL rep2.bigwig", as = "GRanges")
+dmel_msl2_to_dmelHL_rep1_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 1 REPLICATE 1.bigwig", as = "GRanges")
+dmel_msl2_to_dmelHL_rep2_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 1 REPLICATE 2.bigwig", as = "GRanges")
 
 #2
-dvir_msl2_chip_to_dmelHL_rep1_bw <- import.bw("D:/R publication/Dvir-MSL2 ChIP-seq to Dmel HL rep 1.bigwig", as = "GRanges")
-dvir_msl2_chip_to_dmelHL_rep2_bw <- import.bw("D:/R publication/Dvir-MSL2 ChIP-seq to Dmel HL rep2.bigwig", as = "GRanges")
+dvir_msl2_chip_to_dmelHL_rep1_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 2 REPLICATE 1.bigwig", as = "GRanges")
+dvir_msl2_chip_to_dmelHL_rep2_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 2 REPLICATE 2.bigwig", as = "GRanges")
 
 #3
-dvir_msl2_dip_to_dmelHL_rep1_bw <- import.bw("D:/R publication/Dvir-MSL2 DIP-seq to Dmel HL rep1.bigwig", as = "GRanges")
-dvir_msl2_dip_to_dmelHL_rep2_bw <- import.bw("D:/R publication/Dvir-MSL2 DIP-seq to Dmel HL rep2.bigwig", as = "GRanges")
+dvir_msl2_dip_to_dmelHL_rep1_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 3 REPLICATE 1.bigwig", as = "GRanges")
+dvir_msl2_dip_to_dmelHL_rep2_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 3 REPLICATE 2.bigwig", as = "GRanges")
 
 #4
-nonOE_msl2_s2_rep1_bw <- import.bw("D:/R publication/Non-OE MSL2 from S2 rep1.bigwig", as = "GRanges")
-nonOE_msl2_s2_rep2_bw <- import.bw("D:/R publication/Non-OE MSL2 from S2 rep2.bigwig", as = "GRanges")
-nonOE_msl2_s2_rep3_bw <- import.bw("D:/R publication/Non-OE MSL2 from S2 rep3.bigwig", as = "GRanges")
-nonOE_msl2_s2_rep4_bw <- import.bw("D:/R publication/Non-OE MSL2 from S2 rep4.bigwig", as = "GRanges")
+nonOE_msl2_s2_rep1_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 4 REPLICATE 1.bigwig", as = "GRanges")
+nonOE_msl2_s2_rep2_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 4 REPLICATE 2.bigwig", as = "GRanges")
+nonOE_msl2_s2_rep3_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 4 REPLICATE 3.bigwig", as = "GRanges")
+nonOE_msl2_s2_rep4_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 4 REPLICATE 4.bigwig", as = "GRanges")
 
 #5
-nonOE_msl2_salivary_glands_bw <- import.bw("D:/R publication/Non-OE MSL2 from salivary glands (Figueiredo 2014).bigwig", as = "GRanges")
+nonOE_msl2_salivary_glands_bw <- import.bw("DIRECTORY/FOLDER/BIGWIG FILE 5 REPLICATE 1.bigwig", as = "GRanges")
 
 track_bed <- AnnotationTrack(peaks, id = c("H2B","H4","H2A","H3","H1"), cex = 0.5 ,fill = "darkblue", col = "darkblue", name = '')
 #Histone track parameters
